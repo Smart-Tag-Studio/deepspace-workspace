@@ -2,11 +2,24 @@
   "name": "@deepspace/workspace",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "lib/deepspace.cjs.js",
+  "module": "lib/deepspace.es.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "setup": "npm i",
+    "build": "rm -rf ./bin && rollup -c && chmod -R +x ./bin",
+    "setup": "npm i --no-package-lock",
     "setup:clean": "rm -rf ./node_modules"
+  },
+  "bin": {
+    "deepspace": "./bin/deepspace.js"
+  },
+  "dependencies": {
+    "rollup": "^2.45.2"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^18.0.0",
+    "@rollup/plugin-node-resolve": "^11.2.1",
+    "rollup-plugin-preserve-shebangs": "^0.2.0"
   },
   "repository": {
     "type": "git",
