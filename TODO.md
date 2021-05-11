@@ -1,0 +1,1 @@
+- Add rollup to produce a module build

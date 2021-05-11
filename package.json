@@ -1,11 +1,12 @@
 {
-  "name": "deepspace-workspace",
+  "name": "@deepspace/workspace",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "setup": "npm i"
+    "setup": "npm i",
+    "setup:clean": "rm -rf ./node_modules"
   },
   "repository": {
     "type": "git",
