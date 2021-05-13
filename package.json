@@ -1,12 +1,15 @@
 {
   "name": "@deepspace/workspace",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "",
-  "main": "index.js",
+  "main": "lib/deepspace.cjs.js",
+  "module": "lib/deepspace.es.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "setup": "npm i",
-    "setup:clean": "rm -rf ./node_modules"
+    "setup": "echo \"Nothing to setup\"",
+    "setup:clean": "echo \"Nothing to clean\""
+  },
+  "bin": {
+    "deepspace": "./bin/deepspace"
   },
   "repository": {
     "type": "git",

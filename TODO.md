@@ -1,1 +1,1 @@
-- Add rollup to produce a module build
+- Learn how to publish to npm
